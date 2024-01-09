@@ -1,0 +1,31 @@
+<div class="background-image-container">
+  <div class="homepage-container">
+    <div class="sidebar">
+      <a routerLink="/about" class="sidebar-button">About Us</a>
+      <a routerLink="/contact" class="sidebar-button">Contact Us</a>
+      <a routerLink="/register" class="sidebar-button">Register</a>
+      <a *ngIf="!isLoggedIn" routerLink="/login" class="sidebar-button">Login</a>
+      <a *ngIf="isLoggedIn" (click)="onClickLogOut()" class="sidebar-button">Logout</a>
+    </div>
+    <div class="main-content">
+      <!-- Your homepage content goes here -->
+      <!-- your-component.component.html -->
+      <h1><div appTypingAnimation="Welcome to Travel Buddy. Explore the world With Us. You will get the best experience."></div>
+      </h1>
+
+    </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>  
+      
+  </div>
+</div>
+
+ <!----Footer Start----->
+ <div class="footer">
+  <p><b class="bld"></b>|<span>&#169;</span> Copyright © 2024 Travel buddy Inc.|</p>
+  <p><b class="bld"></b>|<span>&#169;</span> All Rights Reserved.|</p>
+</div>
+<!----Footer End -->
+
+

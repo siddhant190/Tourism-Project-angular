@@ -1,0 +1,35 @@
+.nav-bar{
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(105, 102, 94, 0.456);
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.adminform{
+  width: 1000px;
+  height: 600px;
+  background-color:white;
+  padding-left: 450px;
+}
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  text-align: center;
+}

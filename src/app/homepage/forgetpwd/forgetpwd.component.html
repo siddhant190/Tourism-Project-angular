@@ -1,0 +1,19 @@
+<!-- forget-password.component.html -->
+<div class="forget-password-container">
+  <form [formGroup]="forgetPasswordForm" (ngSubmit)="onSubmit()">
+    <h2>Forget Password</h2>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" formControlName="username" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone No</label>
+      <input type="tel" id="phone" formControlName="phone" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="newPassword">New Password</label>
+      <input type="password" id="newPassword" formControlName="newPassword" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

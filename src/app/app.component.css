@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Background color */
+  }
+
+  .nav-bar {
+    background-color:black; /* Navbar background color */
+    color:white; /* Text color */
+    padding: 20px 0; /* Padding */
+  }
+
+  .nav-bar h1 {
+    margin: 0;
+    font-size: 24px; /* Header font size */
+  }
+
+  .nav-bar p {
+    margin: 5px 0 0;
+    font-size: 16px; /* Subtitle font size */
+  }

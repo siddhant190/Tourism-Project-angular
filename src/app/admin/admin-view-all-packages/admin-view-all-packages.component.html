@@ -1,0 +1,16 @@
+
+<div class="user-container">
+    <div class="item" *ngFor="let item of items">
+    <img src={{item.img}} alt="" />
+      <div class="item-content">
+        <h2>{{item.location | uppercase}}</h2>
+        <p>{{item.description}}</p>
+        <h6>Days :{{item.day}}</h6>
+        <h6>Price :{{item.price | currency:"INR":"symbol"}}</h6>
+        <div class="book-left">
+          <button (click)="editpackage(item.id)"  class="btn-right btn btn-outline-info m-2 p-1 ps-3 pe-3">Edit</button>
+        <button (click)="deletePackage(item.id)" class="btn-left btn btn-outline-danger m-2 p-1">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,34 @@
+.aboutus{
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-weight: 100;
+  color: white; 
+  font-size: large;
+}
+
+h2 {
+  color:white;
+}
+
+p {
+  line-height: 1.6;
+}
+.background-image-container{
+  background-image: url('/assets/images/about_contact_bgimg.jpg');
+
+/* Set the background size */
+background-size: cover; /* Other options: contain, auto, etc. */
+
+/* Set the size of the container */
+width: 100%; /* Set the width to 100% of the container */
+height: 100vh; /* Set the height to 300 pixels (adjust as needed) */
+}
+
+.footer{
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  background-color:lightseagreen; /* Navbar background color */
+  color: black;
+}

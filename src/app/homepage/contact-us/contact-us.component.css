@@ -1,0 +1,82 @@
+.background-image-container{
+  font-family: 'Open Sans', sans-serif;
+  color: white; /* Professional text color */
+  box-sizing: border-box;
+  background-image: url('/assets/images/about_contact_bgimg.jpg');  
+  /* Set the background size */
+  background-size: cover; /* Other options: contain, auto, etc. */
+  /* Set the size of the container */
+ /* Set the height to 300 pixels (adjust as needed) */
+}
+.contact-us {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 20px;
+  background: transparent;
+  color: white;
+}
+
+h2 {
+  color:white; /* Header color */
+  text-align: center;
+}
+
+p {
+  color: white;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white; /* Label color */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00796b; /* Button color */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40; /* Button hover color */
+}
+
+.footer{
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  background-color:lightseagreen; /* Navbar background color */
+  color: black;
+}
+
+
+

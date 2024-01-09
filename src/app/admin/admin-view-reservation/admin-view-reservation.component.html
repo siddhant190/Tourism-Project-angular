@@ -1,0 +1,25 @@
+<h3>View All Booking</h3>
+<table>
+    <tr>
+      <th>Reservation ID</th>
+      <th>User ID</th>
+      <th>Package ID</th>
+      <th>Traveller Name</th>
+      <th>Mobile</th>
+      <th>Tour Date</th>
+      <th>Total Members</th>
+      <!-- Add other reservation details as needed -->
+    </tr>
+    <tr *ngFor="let reservation of userBookings">
+      <td>{{ reservation.id }}</td>
+      <td>{{ reservation.username }}</td>
+      <td>{{ reservation.packages }}</td>
+      <td>{{ reservation.travellerName }}</td>
+      <td>{{ reservation.travellerMobile }}</td>
+      <td>{{ reservation.tourStartDate }}</td>
+      <td>{{ reservation.totalMember }}</td>
+      
+    </tr>
+  </table>
+  
+

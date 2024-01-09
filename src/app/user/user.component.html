@@ -1,0 +1,64 @@
+<div class="hero">
+  <nav>
+    <p class="logo">Welcome user</p>
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a [routerLink]="['/history',userId]">History</a></li>
+      <li><a routerLink="/contact">Contact Us</a></li>
+      <li><a routerLink="/about">About Us</a></li>
+    </ul>
+    <img src="assets/images/profile-img.png" class="user-pic" (click)="toggleMenu()">
+    <div [ngClass]="{'open-menu': isMenuOpen}" class="submenu">
+      <!-- Submenu content goes here -->
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="assets/images/profile-img.png">
+            <h2>User name</h2>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <img src="assets/images/profile.png" alt="">
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="assets/images/setting.png" alt="">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="assets/images/help.png" alt="">
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="assets/images/logout.png" alt="">
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    
+    </div>
+
+  </nav>
+  <div class="user-container">
+    <div class="item" *ngFor="let item of items">
+    <img src={{item.img}} alt="item.img" />
+      <div class="item-content">
+        <h2>{{item.location | uppercase}}</h2>
+        <p>{{item.description}}</p>
+  
+        <div class="booking-options">
+          <h6>Days :{{item.day}}</h6>
+          <h6>Price: {{ item.price | currency:"INR":"symbol" }}</h6>
+          <button class="btn btn-outline-info m-2 p-1" (click)="bookItem(item)">Book Now</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+</div>
+

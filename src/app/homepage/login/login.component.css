@@ -1,0 +1,63 @@
+/* login.component.css */
+
+.login-container {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: large;
+  }
+  
+  .background-image-container{
+    background-image:url("/assets/images/login_bgimg1.jpg") ;
+    background-size: cover;
+    height:100vh;
+    padding-top: 80px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .down-login{
+    font-weight: bold;
+     color: darkblue;
+  }
+
+  .footer{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    background-color:lightseagreen; /* Navbar background color */
+    color: black;
+}
+
+  
+  

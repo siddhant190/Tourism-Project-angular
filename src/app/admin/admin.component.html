@@ -1,0 +1,46 @@
+<div>
+  
+<div class="nav-bar">
+  <h2>Admin Dashboard</h2>
+    <button class="btn1" (click)="logout()">Logout</button>
+</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add Location -->
+        <tr>
+          <td>Add Location and package</td>
+          <td>
+            <button  (click)="addLocationandpackage()" class="btn btn-primary">Add</button>
+          </td>
+        </tr>
+        <!-- Admin View Reservation -->
+        <tr>
+          <td>Admin View Reservation</td>
+          <td>
+            <button (click)="viewReservation()" class="btn btn-primary">View</button>
+          </td>
+        </tr>
+
+        <!-- Admin View Users -->
+        <tr>
+          <td>Admin View Users</td>
+          <td>
+            <button (click)="viewUsers()" class="btn btn-primary">View</button>
+          </td>
+        </tr>
+        <!-- Admin View All Packages -->
+        <tr>
+          <td>Admin View All Packages</td>
+          <td>
+            <button (click)="viewAllPackages()" class="btn btn-primary">View</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

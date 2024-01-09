@@ -1,0 +1,31 @@
+<!-- login.component.html -->
+<div class="background-image-container">
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+      <div *ngIf="loginError" class="error">{{ loginError }}</div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="email" id="email" formControlName="email" required placeholder="Enter your email ">
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" required>
+      </div>
+  
+      <button type="submit">Login</button><br><br>
+      <p>Don't have an account?<a href="/register" style="font-weight:bold ; color: darkblue;">SignUp</a></p>
+      <p>Forgot Password?<a href="/forgetpwd" style="font-weight:bold ; color: darkblue;">Reset password</a></p>
+    </form>
+  </div>
+</div>
+
+ <!----Footer Start----->
+ <div class="footer">
+  <p><b class="bld"></b>|<span>&#169;</span> Copyright © 2024 Travel buddy Inc.|</p>
+  <p><b class="bld"></b>|<span>&#169;</span> All Rights Reserved.|</p>
+</div>
+<!----Footer End -->
+  
+<router-outlet></router-outlet>

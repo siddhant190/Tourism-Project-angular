@@ -1,0 +1,24 @@
+.whole{
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.form {
+    width: 600px;
+    background-color: rgba(240, 242, 248, 0.74);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}

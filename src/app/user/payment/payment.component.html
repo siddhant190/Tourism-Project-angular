@@ -1,0 +1,89 @@
+<div class="container mt-5">
+    <div class="row">
+        <!-- Payment Form -->
+        <div class="col-md-6">
+            <div class="paymentform">
+                <h2>Payment Form</h2>
+                <form>
+                    <div class="row mb-3">
+                        <label for="cardNumber" class="col-sm-2 col-form-label">Card Number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" required>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="cardName" class="col-sm-2 col-form-label">Name on Card</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="cardName" placeholder="Enter name on card" required>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="cardType" class="col-sm-2 col-form-label">Card Type</label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="cardType" required>
+                                <option value="rupay">Rupay</option>
+                                <option value="visa">Visa</option>
+                                <option value="platinum">Platinum</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="expiryDate" class="col-sm-2 col-form-label">Expiry Date</label>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="expiryMonth" placeholder="MM" required>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="expiryYear" placeholder="YYYY" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="amount" class="col-sm-2 col-form-label">Amount</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                        <div class="col-sm-8">
+                            <!-- Your terms go here -->
+                            <p>Your terms and conditions text goes here.</p>
+                            <!-- Add your terms and conditions text accordingly -->
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                        <div class="col-sm-8">
+                            <button (click)="makepayment()" type="button" class="btn btn-success">Make Payment</button>
+                        </div>
+                        <div class="col-sm-2"></div> <!-- Empty column for spacing -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Payment Image -->
+        <div class="col-md-6">
+            <div class="paymentimg text-end">
+                <!-- Your image goes here -->
+                <img src="assets/images/payment.jpg" alt="Terms" class="img-fluid">
+                <!-- Add your image path and alt text accordingly -->
+            </div>
+        </div>
+    </div>
+</div>
